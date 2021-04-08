@@ -1,1 +1,1 @@
-# android_project_practice
+# android_mini_projects
