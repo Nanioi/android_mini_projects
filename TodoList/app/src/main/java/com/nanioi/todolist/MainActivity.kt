@@ -34,13 +34,13 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = TodoAdapter(
-                emptyList(),
-                onClickDeleteIcon = { todo ->
-                    viewModel.deleteTodo(todo)
-                },
-                onClickItem = { todo ->
-                    viewModel.toggleTodo(todo)
-                })
+                    emptyList(),
+                    onClickDeleteIcon = { todo ->
+                        viewModel.deleteTodo(todo)
+                    },
+                    onClickItem = { todo ->
+                        viewModel.toggleTodo(todo)
+                    })
         }
         binding.addButton.setOnClickListener {
             val todo = Todo(binding.editTextTextPersonName.text.toString())
@@ -55,24 +55,26 @@ class MainActivity : AppCompatActivity() {
 }
 
 data class Todo(
-    val text: String,
-    var isDone: Boolean = false,
+        val text: String,
+        var isDone: Boolean = false,
 ) {
 
 }
 
 class TodoAdapter(
-    private var dataSet: List<Todo>,
-    val onClickDeleteIcon: (todo: Todo) -> Unit,
-    val onClickItem: (todo: Todo) -> Unit
+        private var dataSet: List<Todo>,
+        val onClickDeleteIcon: (todo: Todo) -> Unit,
+        val onClickItem: (todo: Todo) -> Unit
 ) : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
 
     class TodoViewHolder(val binding: ItemTodoBinding) : RecyclerView.ViewHolder(binding.root) {
+        val checkButton: ImageButton
         val todoTextView: TextView
         val deleteButton: ImageButton
 
         init {
             // Define click listener for the ViewHolder's View.
+            checkButton = binding.checkButton
             todoTextView = binding.todoTextView
             deleteButton = binding.deleteButton
         }
@@ -82,7 +84,7 @@ class TodoAdapter(
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): TodoViewHolder {
         // Create a new view, which defines the UI of the list item
         val view = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.item_todo, viewGroup, false)
+                .inflate(R.layout.item_todo, viewGroup, false)
 
         return TodoViewHolder(ItemTodoBinding.bind(view))
     }
@@ -99,11 +101,13 @@ class TodoAdapter(
         }
 
         if (todo.isDone) {
+            viewHolder.checkButton.setBackgroundResource(R.drawable.ic_check_circle)
             viewHolder.todoTextView.apply {
                 paintFlags = paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
                 setTypeface(null, Typeface.ITALIC)
             }
         } else {
+            viewHolder.checkButton.setBackgroundResource(R.drawable.ic_before_check)
             viewHolder.todoTextView.apply {
                 paintFlags = 0
                 setTypeface(null, Typeface.NORMAL)
@@ -117,7 +121,7 @@ class TodoAdapter(
     // Return the size of your dataset (invoked by the layout manager)
     override fun getItemCount() = dataSet.size
 
-    fun setData(newData:List<Todo>){
+    fun setData(newData: List<Todo>) {
         dataSet = newData
         notifyDataSetChanged()
     }
