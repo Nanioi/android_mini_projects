@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.EditorInfo
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.viewModels
@@ -43,8 +44,9 @@ class MainActivity : AppCompatActivity() {
                     })
         }
         binding.addButton.setOnClickListener {
-            val todo = Todo(binding.editTextTextPersonName.text.toString())
+            val todo = Todo(binding.editText.text.toString())
             viewModel.addTodo(todo)
+            binding.editText.text = null
         }
 
         //관찰, UI 업데이트
