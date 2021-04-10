@@ -12,13 +12,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/transparent</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowLightStatusBar" >true</item>
-        <item name="android:textViewStyle">@font/dodam</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fontFamily">@font/dodam</item>
     </style>
+
     <style name="noActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor" tools:targetApi="l">@color/transparent</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowLightStatusBar" >true</item>
-        <item name="android:textViewStyle">@font/dodam</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fontFamily">@font/dodam</item>
     </style>
 </resources>

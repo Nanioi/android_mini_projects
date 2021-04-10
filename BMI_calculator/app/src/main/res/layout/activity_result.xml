@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_margin="25dp"
     android:background="@drawable/radius_light_pink"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".ResultActivity">
 
     <LinearLayout
@@ -27,30 +27,30 @@
             android:id="@+id/bmiValueTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="25sp"
             tools:text="23.2222" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="30dp"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
-            android:textSize="25sp"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="결과 : " />
+            android:text="결과 : "
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:textSize="20sp"
             android:id="@+id/bmiResultTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="25sp"
             tools:text="정상체중입니다." />
 
     </LinearLayout>
