@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "45925440257",
+    "project_id": "to-do-list-e8868",
+    "storage_bucket": "to-do-list-e8868.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45925440257:android:f28b5a735e484f7e175900",
+        "android_client_info": {
+          "package_name": "com.nanioi.todolist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45925440257-6cggkqa5agegfoggcacms9kr8j2hcd0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVM3CVe92YKGYyeYm0a_yn-oz9xMJj2s4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45925440257-6cggkqa5agegfoggcacms9kr8j2hcd0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
