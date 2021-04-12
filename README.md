@@ -18,7 +18,7 @@
 #### - 계산기
 <img src = "https://user-images.githubusercontent.com/52556870/114345571-f0acec00-9b9c-11eb-889e-9ad921e85306.jpeg" width="200">
 
-#### - Electronic_Frame
+#### - 전자액자
 <img src = "https://user-images.githubusercontent.com/52556870/114345255-59e02f80-9b9c-11eb-8efb-6cceabcd3e09.jpeg" width="200">
 <img src = "https://user-images.githubusercontent.com/52556870/114345262-5e0c4d00-9b9c-11eb-85f3-dd9a989470c8.jpeg" width="200">
 
@@ -33,9 +33,11 @@
 <img src = "https://user-images.githubusercontent.com/52556870/114345681-20f48a80-9b9d-11eb-9765-eb249d8577f9.jpeg" width="200">
 <img src = "https://user-images.githubusercontent.com/52556870/114350777-a3347d00-9ba4-11eb-8911-f82b149e6a49.jpeg" width="200">
 
-#### - PomodoroTimer
+#### - Pomodoro Timer
 <img src = "https://user-images.githubusercontent.com/52556870/114345769-484b5780-9b9d-11eb-9da4-4e20715e982e.jpeg" width="200">
 <img src = "https://user-images.githubusercontent.com/52556870/114345771-497c8480-9b9d-11eb-8fd4-35f66c6d8b3d.jpeg" width="200">
 
-#### - TodoList
+#### - TodoList!
+<img src = "https://user-images.githubusercontent.com/52556870/114354566-5dc67e80-9ba9-11eb-9885-4d670f53fd68.jpeg" width="200">
+<img src = "https://user-images.githubusercontent.com/52556870/114354394-2657d200-9ba9-11eb-8994-24bbf0cd872e.png" width="200">
 <img src = "https://user-images.githubusercontent.com/52556870/114344059-1be20c00-9b9a-11eb-8b9c-96d1fc8160ee.png" width="200">
