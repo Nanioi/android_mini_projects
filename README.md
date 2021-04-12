@@ -8,4 +8,4 @@
 #### 웹브라우저
 #### PomodoroTimer
 #### TodoList
-<img src = "https://user-images.githubusercontent.com/52556870/114344059-1be20c00-9b9a-11eb-8b9c-96d1fc8160ee.png" width="100">
+<img src = "https://user-images.githubusercontent.com/52556870/114344059-1be20c00-9b9a-11eb-8b9c-96d1fc8160ee.png" width="300">
