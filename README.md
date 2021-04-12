@@ -1,1 +1,10 @@
 # android_mini_projects
+#### Electronic_Frame
+#### 로또추첨기
+#### 비밀다이어리
+#### BMI계산기
+#### 계산기
+#### 녹음기
+#### 웹브라우저
+#### PomodoroTimer
+#### TodoList
