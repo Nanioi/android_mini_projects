@@ -6,6 +6,7 @@
 <img src = "https://user-images.githubusercontent.com/52556870/114344059-1be20c00-9b9a-11eb-8b9c-96d1fc8160ee.png" width="200">
 
 #### - Pomodoro Timer
+##### : 타이머 소리, 타이머 종료 시 소리 있음
 <img src = "https://user-images.githubusercontent.com/52556870/114345769-484b5780-9b9d-11eb-9da4-4e20715e982e.jpeg" width="200">
 <img src = "https://user-images.githubusercontent.com/52556870/114345771-497c8480-9b9d-11eb-8fd4-35f66c6d8b3d.jpeg" width="200">
 
