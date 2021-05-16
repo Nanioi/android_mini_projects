@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "517449821699",
+    "project_id": "quote-dictionary",
+    "storage_bucket": "quote-dictionary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517449821699:android:d00005ef9689fa2660a836",
+        "android_client_info": {
+          "package_name": "com.nanioi.quote_dictionary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517449821699-nfpmbb5vtne8mordc6cp1da0k1f0bugg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1hgQ375q-paOlGeS3XfnljB4qlojZueY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517449821699-nfpmbb5vtne8mordc6cp1da0k1f0bugg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
