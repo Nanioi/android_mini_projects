@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Alarm_Application</string>
+    <string name="onOffAlarm">알람켜기</string>
+</resources>
