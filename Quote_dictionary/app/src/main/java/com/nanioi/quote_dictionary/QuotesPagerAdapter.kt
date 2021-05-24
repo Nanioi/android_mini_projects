@@ -1,5 +1,6 @@
 package com.nanioi.quote_dictionary
 
+
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
