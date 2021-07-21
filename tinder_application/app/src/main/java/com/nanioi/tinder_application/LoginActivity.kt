@@ -17,6 +17,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import com.nanioi.tinder_application.DBkey.Companion.USERS
+import com.nanioi.tinder_application.DBkey.Companion.USER_ID
 
 class LoginActivity : AppCompatActivity() {
 
@@ -133,9 +135,9 @@ class LoginActivity : AppCompatActivity() {
             return
         }
         val userId = auth.currentUser?.uid.orEmpty() //userId 가져오기
-        val currentUserDB = Firebase.database.reference.child("Users").child(userId)
+        val currentUserDB = Firebase.database.reference.child(USERS).child(userId)
         val user = mutableMapOf<String,Any>()
-        user["userId"]=userId
+        user[USER_ID]=userId
         currentUserDB.updateChildren(user)
 
         finish()
