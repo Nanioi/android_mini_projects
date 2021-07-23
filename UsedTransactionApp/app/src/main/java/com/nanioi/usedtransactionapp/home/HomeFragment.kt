@@ -1,10 +1,11 @@
 package com.nanioi.usedtransactionapp.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ChildEventListener
@@ -17,13 +18,13 @@ import com.nanioi.usedtransactionapp.DBKey.Companion.DB_ARTICLES
 import com.nanioi.usedtransactionapp.R
 import com.nanioi.usedtransactionapp.databinding.FragmentHomeBinding
 
-class HomeFragment :Fragment(R.layout.fragment_home){
+class HomeFragment : Fragment(R.layout.fragment_home) {
 
-    private lateinit var articleDB : DatabaseReference
-    private lateinit var articleAdapter : ArticleAdapter
+    private lateinit var articleDB: DatabaseReference
+    private lateinit var articleAdapter: ArticleAdapter
 
     private val articleList = mutableListOf<ArticleModel>()
-    private val listener = object :ChildEventListener{
+    private val listener = object : ChildEventListener {
         override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
             val articleModel = snapshot.getValue(ArticleModel::class.java)
             articleModel ?: return
@@ -33,15 +34,15 @@ class HomeFragment :Fragment(R.layout.fragment_home){
 
         override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {}
 
-        override fun onChildRemoved(snapshot: DataSnapshot){}
+        override fun onChildRemoved(snapshot: DataSnapshot) {}
 
-        override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?){}
+        override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {}
 
-        override fun onCancelled(error: DatabaseError){}
+        override fun onCancelled(error: DatabaseError) {}
 
     }
     private var binding: FragmentHomeBinding? = null
-    private val auth : FirebaseAuth by lazy{
+    private val auth: FirebaseAuth by lazy {
         Firebase.auth
     }
 
@@ -59,6 +60,15 @@ class HomeFragment :Fragment(R.layout.fragment_home){
         fragmentHomeBinding.articleRecyclerView.layoutManager = LinearLayoutManager(context)
         fragmentHomeBinding.articleRecyclerView.adapter = articleAdapter
 
+        fragmentHomeBinding.addFloatingButton.setOnClickListener {
+            //로그인 기능 구현
+            if (auth.currentUser != null) {
+                val intent = Intent(requireContext(), AddArticleActivity::class.java)
+                startActivity(intent)
+            } else {
+                Snackbar.make(view, "로그인 후 사용해주세요", Snackbar.LENGTH_LONG).show()
+            }
+        }
         //한번등록하면 계속 가능, simple..-> 즉시선언, 한번사용가능
         articleDB.addChildEventListener(listener)
     }
@@ -68,6 +78,7 @@ class HomeFragment :Fragment(R.layout.fragment_home){
 
         articleAdapter.notifyDataSetChanged()
     }
+
     override fun onDestroyView() { // 뷰에서 나갈때
         super.onDestroyView()
 
