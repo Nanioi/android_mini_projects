@@ -11,7 +11,7 @@ import com.nanioi.usedtransactionapp.databinding.ItemArticleBinding
 import java.text.SimpleDateFormat
 import java.util.*
 
-class ArticleAdapter : ListAdapter<ArticleModel, ArticleAdapter.ViewHolder>(diffUtil) {
+class ArticleAdapter(val onItemClicked: (ArticleModel)->Unit): ListAdapter<ArticleModel, ArticleAdapter.ViewHolder>(diffUtil) {
 
     inner class ViewHolder(private val binding: ItemArticleBinding):RecyclerView.ViewHolder(binding.root){
 
@@ -26,6 +26,10 @@ class ArticleAdapter : ListAdapter<ArticleModel, ArticleAdapter.ViewHolder>(diff
                 Glide.with(binding.thumbnailImageView)
                     .load(articleModel.imageUrl)
                     .into(binding.thumbnailImageView)
+            }
+
+            binding.root.setOnClickListener {
+                onItemClicked(articleModel)
             }
         }
     }
