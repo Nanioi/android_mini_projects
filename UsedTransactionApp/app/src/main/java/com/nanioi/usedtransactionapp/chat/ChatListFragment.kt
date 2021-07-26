@@ -1,5 +1,6 @@
 package com.nanioi.usedtransactionapp.chat
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
@@ -16,6 +17,7 @@ import com.google.firebase.ktx.Firebase
 import com.nanioi.usedtransactionapp.DBKey.Companion.CHILD_CHAT
 import com.nanioi.usedtransactionapp.DBKey.Companion.DB_USERS
 import com.nanioi.usedtransactionapp.R
+import com.nanioi.usedtransactionapp.chatDetail.ChatRoomActivity
 import com.nanioi.usedtransactionapp.databinding.FragmentChatBinding
 import com.nanioi.usedtransactionapp.home.ArticleAdapter
 import com.nanioi.usedtransactionapp.home.ChatListAdapter
@@ -36,8 +38,14 @@ class ChatListFragment :Fragment(R.layout.fragment_chat){
         val  fragmentChatBinding = FragmentChatBinding.bind(view)
         binding = fragmentChatBinding
 
-        chatListAdapter = ChatListAdapter(onItemClicked = {
+        chatListAdapter = ChatListAdapter(onItemClicked = { chatRoom->
             //채팅방으로 이동하는 코드
+
+            context?.let {
+                val intent = Intent(it,ChatRoomActivity::class.java)
+                intent.putExtra("chatKey",chatRoom.key)
+                startActivity(intent)
+            }
         })
 
         chatRoomList.clear()
