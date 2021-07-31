@@ -17,6 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class MainActivity : AppCompatActivity() {
 
     private lateinit var videoAdapter : VideoAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -25,7 +26,11 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragmentContainer,PlayerFragment())
             .commit()
 
-        videoAdapter = VideoAdapter()
+        videoAdapter = VideoAdapter(callback = { url,title->
+            supportFragmentManager.fragments.find{ it is PlayerFragment}?.let{
+                (it as PlayerFragment).play(url,title)
+            }
+        })
 
         findViewById<RecyclerView>(R.id.mainRecyclerView).apply {
             adapter = videoAdapter
