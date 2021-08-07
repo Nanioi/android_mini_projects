@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "OTT_application_intro"
