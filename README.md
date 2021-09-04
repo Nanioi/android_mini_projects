@@ -49,7 +49,15 @@
 #### - 오늘의 명언
 <img src = "https://user-images.githubusercontent.com/52556870/132090979-e1202d4f-2b88-4c2c-9583-87b2e59da738.png" width="200">
 
+#### - 알람 앱
+
+#### - 도서리뷰 앱
+
 #### - 에어비엔비
+
+#### - 중고거래 앱
+
+#### - 틴더 앱
 
 #### - 음악 스트리밍 앱
 <img src = "https://user-images.githubusercontent.com/52556870/132091565-20fdf2d2-80b3-4913-872f-14f67c6e1a54.png" width="200">
@@ -59,3 +67,15 @@
 
 #### - OTT 앱 인트로
 <img width="200" src="https://user-images.githubusercontent.com/52556870/132091404-a7087531-20fb-41c5-a7f1-ef87295d9d0f.gif">
+
+#### - 위치검색 지도 앱
+
+#### - 코루틴 이용 깃헙 레포지토리 앱
+
+#### - 미세먼지 측정 앱
+<img src = "https://user-images.githubusercontent.com/52556870/132091633-04b5181b-280c-4e29-bd28-d41dd776716b.png" width="200">
+
+#### - 저작권 무료 이미지 검색 앱
+<img src = "https://user-images.githubusercontent.com/52556870/132091664-a1c99ed0-1ea6-4174-b1ae-6b6115a10a98.png" width="200">
+
+
