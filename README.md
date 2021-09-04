@@ -62,7 +62,4 @@
 <img src = "https://user-images.githubusercontent.com/52556870/132091281-ffa9ac4b-09dd-44bd-866c-c9df5d94f282.png" width="200">
 
 #### - OTT 앱 인트로
-
-| 결과 화면 |
-| -------------------------------------- |
-| ![결과 화면](https://user-images.githubusercontent.com/8112952/109826336-07971f00-7c7e-11eb-94fb-5dfa433f1da6.gif) |
+<img width="200" src="https://user-images.githubusercontent.com/52556870/132091404-a7087531-20fb-41c5-a7f1-ef87295d9d0f.gif">
