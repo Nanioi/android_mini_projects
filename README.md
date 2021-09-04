@@ -54,8 +54,8 @@
 <img src = "https://user-images.githubusercontent.com/52556870/132091212-c6ec2550-be59-4a43-8dcc-b795192bc5ae.png" width="200">
 
 #### - 음악 스트리밍 앱
-<img src = "https://user-images.githubusercontent.com/52556870/132091285-e48f7644-e99b-4186-8dbb-b324f3dfd457.png" width="200">
-<img src = "https://user-images.githubusercontent.com/52556870/132091281-ffa9ac4b-09dd-44bd-866c-c9df5d94f282.png" width="200">
+<img src = "https://user-images.githubusercontent.com/52556870/132091565-20fdf2d2-80b3-4913-872f-14f67c6e1a54.png" width="200">
+<img src = "https://user-images.githubusercontent.com/52556870/132091562-548ff897-8a69-4bb4-b68c-c81b01a8dbe4.png" width="200">
 
 #### - 유튜브
 <img src = "https://user-images.githubusercontent.com/52556870/132091285-e48f7644-e99b-4186-8dbb-b324f3dfd457.png" width="200">
