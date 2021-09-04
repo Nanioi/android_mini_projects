@@ -43,6 +43,10 @@
 <img src = "https://user-images.githubusercontent.com/52556870/114345255-59e02f80-9b9c-11eb-8efb-6cceabcd3e09.jpeg" width="200">
 <img src = "https://user-images.githubusercontent.com/52556870/114345262-5e0c4d00-9b9c-11eb-85f3-dd9a989470c8.jpeg" width="200">
 
+#### - 푸쉬알림수신기
+<img src = "https://user-images.githubusercontent.com/52556870/132090974-997892f6-0c65-4e93-be9e-3deb269ab2cf.png" width="200">
 
+#### - 오늘의 명언
+<img src = "https://user-images.githubusercontent.com/52556870/132090979-e1202d4f-2b88-4c2c-9583-87b2e59da738.png" width="200">
 
 
