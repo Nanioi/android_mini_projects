@@ -72,7 +72,7 @@
 <img src = "https://user-images.githubusercontent.com/52556870/132091562-548ff897-8a69-4bb4-b68c-c81b01a8dbe4.png" width="200">
 
 #### - 유튜브
-<img width="200" src="">
+<img width="200" src="https://user-images.githubusercontent.com/52556870/132362323-0512b3b8-49bf-49d2-a09f-dff9dd63e1a5.gif">
 
 #### - OTT 앱 인트로
 <img width="200" src="https://user-images.githubusercontent.com/52556870/132091404-a7087531-20fb-41c5-a7f1-ef87295d9d0f.gif">
