@@ -99,8 +99,8 @@
 #### - 에어비엔비
 ##### 1) Naver Map API 이용해 지도사용 2) Mock API 에서 예약가능 숙소 목록을 받아와 지도표기
 ##### 3) BottomSheetView -> 예약 가능 숙소 목록을 인터렉션하게 표시 4) ViewPager2 -> 현재 보고있는 숙소를 표시
+##### 5) 숙소버튼을 눌러 현재 보고 있는 숙소를 앱 외부로 공유할 수 있음.
 ##### Naver Map API, ViewPager2, FrameLayout, CoordinatorLayout, BottomSheetBehavior, Retrofit, Glide
-숙소버튼을 눌러 현재 보고 있는 숙소를 앱 외부로 공유할 수 있음.
 <img src = "https://user-images.githubusercontent.com/52556870/132363787-7ab5ba09-4b55-43e0-b315-12f49367a290.png" width="200">
 <img src = "https://user-images.githubusercontent.com/52556870/132363771-fb5748e1-88d9-4b7f-ad08-881f5b6ae9e8.png" width="200">
 
