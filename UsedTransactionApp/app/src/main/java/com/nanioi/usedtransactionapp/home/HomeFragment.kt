@@ -30,7 +30,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private val articleList = mutableListOf<ArticleModel>()
     private val listener = object : ChildEventListener {
         override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
-            val articleModel = snapshot.getValue(ArticleModel::class.java)
+            val articleModel = snapshot.getValue(ArticleModel::class.java) // ArticleModel 클래스로 데이터를 받아옴
             articleModel ?: return
             articleList.add(articleModel)
             articleAdapter.submitList(articleList)
@@ -57,9 +57,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         //지역변수로 선언해준 이유 -> binding 변수가 nullable이기 때문 사용할때마다 null을 풀어주는 체크를 해줘야함 -> onViewCreated 안에서만 절대 null이 될 수 없는 변수로 사용하기 위해
         binding = fragmentHomeBinding
 
-        articleList.clear()
+        articleList.clear() // item 리스트 초기
         userDB = Firebase.database.reference.child(DB_USERS)
         articleDB = Firebase.database.reference.child(DB_ARTICLES)
+
         articleAdapter = ArticleAdapter(onItemClicked = { articleModel ->
             if (auth.currentUser != null) {
                 // 로그인을 한 상태
@@ -93,14 +94,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         fragmentHomeBinding.articleRecyclerView.adapter = articleAdapter
 
         fragmentHomeBinding.addFloatingButton.setOnClickListener {
-            //로그인 기능 구현
             if (auth.currentUser != null) {
-                val intent = Intent(requireContext(), AddArticleActivity::class.java)
-                startActivity(intent)
+                val intent = Intent(requireContext(), AddArticleActivity::class.java) //context가 널일 수 있어 requireContext 사용
+                startActivity(intent) // 아이템 등록 창으로 이동
             } else {
                 Snackbar.make(view, "로그인 후 사용해주세요", Snackbar.LENGTH_LONG).show()
             }
         }
+
         //한번등록하면 계속 가능, simple..-> 즉시선언, 한번사용가능
         articleDB.addChildEventListener(listener)
     }
@@ -108,7 +109,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     override fun onResume() { // 뷰가 다시 보일때
         super.onResume()
 
-        articleAdapter.notifyDataSetChanged()
+        articleAdapter.notifyDataSetChanged() // 데이터 다시 불러와 뷰 다시 그리기
     }
 
     override fun onDestroyView() { // 뷰에서 나갈때
