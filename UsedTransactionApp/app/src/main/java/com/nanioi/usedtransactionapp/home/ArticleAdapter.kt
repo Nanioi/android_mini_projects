@@ -22,6 +22,7 @@ class ArticleAdapter(val onItemClicked: (ArticleModel)->Unit): ListAdapter<Artic
             binding.titleTextView.text = articleModel.title
             binding.dateTextView.text = format.format(date).toString()
             binding.priceTextView.text = articleModel.price
+
             if(articleModel.imageUrl.isNotEmpty()){
                 Glide.with(binding.thumbnailImageView)
                     .load(articleModel.imageUrl)
