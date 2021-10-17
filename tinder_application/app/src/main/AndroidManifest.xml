@@ -11,9 +11,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tinder_application">
-        <activity android:name=".MatchedUserActivity"></activity>
-        <activity android:name=".LikeActivity" />
-        <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MatchedUserActivity" />
+        <activity android:name=".LikeActivity" />
+        <activity android:name=".LoginActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -42,6 +42,7 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

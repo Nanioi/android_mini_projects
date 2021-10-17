@@ -29,11 +29,9 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        auth= Firebase.auth
-        callbackManager= CallbackManager.Factory.create()
+        auth= Firebase.auth //==FirebaseAuth.getInstance()
+        callbackManager= CallbackManager.Factory.create() // 초기화
 
-        val emailEditText = findViewById<EditText>(R.id.emailEditText)
-        val passwordEditText  = findViewById<EditText>(R.id.passwordEditText)
 
         initLoginButton()
         initSignUpButton()
@@ -75,6 +73,8 @@ class LoginActivity : AppCompatActivity() {
                 }
         }
     }
+
+    // 비어있을 경우 버튼 비활성화
     private fun initEmailAndPasswordEditText() {
         val emailEditText = findViewById<EditText>(R.id.emailEditText)
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
@@ -92,12 +92,13 @@ class LoginActivity : AppCompatActivity() {
             signUpButton.isEnabled=enable
         }
     }
+
     private fun initFacebookLoginButton() {
        val facebookLoginButton = findViewById<LoginButton>(R.id.facebookLoginButton)
 
-        facebookLoginButton.setPermissions("email","public_profile")
+        facebookLoginButton.setPermissions("email","public_profile") // 페이스북 계정에서 받아올 정보
         facebookLoginButton.registerCallback(callbackManager,object :FacebookCallback<LoginResult>{
-            override fun onSuccess(result: LoginResult) {
+            override fun onSuccess(result: LoginResult) { // 로그인 accessToken 가져와 Firebase에 넘겨주기
                 val credential = FacebookAuthProvider.getCredential(result.accessToken.token)
                 auth.signInWithCredential(credential)
                     .addOnCompleteListener(this@LoginActivity) {task->
@@ -109,7 +110,7 @@ class LoginActivity : AppCompatActivity() {
                     }
             }
 
-            override fun onCancel() {
+            override fun onCancel() {// 로그인 하다가 취소
             }
 
             override fun onError(error: FacebookException?) {

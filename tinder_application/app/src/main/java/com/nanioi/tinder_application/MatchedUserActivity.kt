@@ -30,36 +30,34 @@ class MatchedUserActivity : AppCompatActivity() {
         getMatchUsers()
     }
 
+    // 매치된 유저 정보 가져오기
     private fun getMatchUsers() {
-        val matchedDB = userDB.child(getCurrentUserID()).child(LIKED_BY).child(MATCH)
+        val matchedDB = userDB.child(getCurrentUserID()).child(LIKED_BY).child(MATCH) // 내 id의 match 아이디들 가져오기
 
         matchedDB.addChildEventListener(object :ChildEventListener{
             override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
                 if(snapshot.key?.isNotEmpty()==true){
-                    getUserByKey(snapshot.key.orEmpty())
+                    getUserByKey(snapshot.key.orEmpty()) // key로 상대방 이름 가져오는 함수
                 }
             }
 
             override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?){}
-
             override fun onChildRemoved(snapshot: DataSnapshot){}
-
             override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {}
-
             override fun onCancelled(error: DatabaseError){}
 
         })
     }
 
+    // key(상대방 userId)로 상대방 이름 가져오는 함수
     private fun getUserByKey(userId: String) {
-        userDB.child(userId).addListenerForSingleValueEvent(object :ValueEventListener{
+        userDB.child(userId).addListenerForSingleValueEvent(object :ValueEventListener{ // 한번만 정보 가져옴
             override fun onDataChange(snapshot: DataSnapshot) {
                 cardItems.add(CardItem(userId,snapshot.child(NAME).value.toString()))
                 adapter.submitList(cardItems)
             }
 
             override fun onCancelled(error: DatabaseError) {}
-
         })
     }
 
