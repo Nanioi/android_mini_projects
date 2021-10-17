@@ -1,34 +1,63 @@
 {
   "project_info": {
-    "project_number": "526560364977",
-    "firebase_url": "https://usedtransactionapp-de883-default-rtdb.firebaseio.com",
-    "project_id": "usedtransactionapp-de883",
-    "storage_bucket": "usedtransactionapp-de883.appspot.com"
+    "project_number": "53002944022",
+    "firebase_url": "https://tinder-application-a337a-default-rtdb.firebaseio.com",
+    "project_id": "tinder-application-a337a",
+    "storage_bucket": "tinder-application-a337a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:526560364977:android:b72c29adf06109e30b5590",
+        "mobilesdk_app_id": "1:53002944022:android:0caa26f8a259e20087bf37",
         "android_client_info": {
-          "package_name": "com.nanioi.usedtransactionapp"
+          "package_name": "com.nanioi.tinder_application"
         }
       },
       "oauth_client": [
         {
-          "client_id": "526560364977-kvj16sq5l0a08e2328mkmv5r369l1gj2.apps.googleusercontent.com",
+          "client_id": "53002944022-t120rrfvbue933s3qmtsq43kfdv31cgk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCpsw8Ck3s_joVZafajPfFMCSVbjuIJxsM"
+          "current_key": "AIzaSyBuLc9MS_3SqS4PF7h13J23bwjcaopRAmU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "526560364977-kvj16sq5l0a08e2328mkmv5r369l1gj2.apps.googleusercontent.com",
+              "client_id": "53002944022-t120rrfvbue933s3qmtsq43kfdv31cgk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53002944022:android:214f16cb9c23ef2487bf37",
+        "android_client_info": {
+          "package_name": "com.nanioi.usedtransactionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53002944022-t120rrfvbue933s3qmtsq43kfdv31cgk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuLc9MS_3SqS4PF7h13J23bwjcaopRAmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53002944022-t120rrfvbue933s3qmtsq43kfdv31cgk.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
