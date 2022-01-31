@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_check_circle.xml" value="0.16111111111111112" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_todo.xml" value="0.17592592592592593" />
       </map>
     </option>
   </component>
