@@ -134,9 +134,9 @@
 ##### 4) Fragment 를 사용하여 하단 탭 화면 구조 구현, FloatingActionButton 사용
 ##### RecyclerView, View Binding, Fragment, BottomNavigationView, Firebase Storage/Realtime Database/Authentication
 <p float="left">
-<img src = "https://user-images.githubusercontent.com/52556870/132361240-2ad76ae5-2267-4db2-9fd6-c1024a03c823.png" width="200" height = "450" >
-<img src = "https://user-images.githubusercontent.com/52556870/132361231-35b4df9e-a5bb-4137-9e5c-f83ca20fdd8b.png" width="200" height = "450">
-<img src = "https://user-images.githubusercontent.com/52556870/132361239-0eaa1c68-f1c6-4bd7-9683-19641094b237.png" width="200" height = "450">
+<img src = "https://user-images.githubusercontent.com/52556870/132361240-2ad76ae5-2267-4db2-9fd6-c1024a03c823.png" width="200" height = "330" >
+<img src = "https://user-images.githubusercontent.com/52556870/132361231-35b4df9e-a5bb-4137-9e5c-f83ca20fdd8b.png" width="200" height = "330">
+<img src = "https://user-images.githubusercontent.com/52556870/132361239-0eaa1c68-f1c6-4bd7-9683-19641094b237.png" width="200" height = "330">
 </p>
 
 #### - 에어비엔비
