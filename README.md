@@ -5,7 +5,7 @@
 ##### 1) 할일 추가 기능 2) 삭제 기능 3) 할 일 완료 기능 4) 화면 회전 처리 5) 이메일 
 ##### RecyclerView, View Binding, ViewModel, LiveData, Firebase, Firestore
 <p float="left">
-<img src = "https://user-images.githubusercontent.com/52556870/114354566-5dc67e80-9ba9-11eb-9885-4d670f53fd68.jpeg" width="200">
+<img src = "https://user-images.githubusercontent.com/52556870/152687509-ecd507f9-d610-4799-bdc4-233fc88b69ff.jpg" width="200">
 <img src = "https://user-images.githubusercontent.com/52556870/114354394-2657d200-9ba9-11eb-8994-24bbf0cd872e.png" width="200">
 <img src = "https://user-images.githubusercontent.com/52556870/114344059-1be20c00-9b9a-11eb-8b9c-96d1fc8160ee.png" width="200">
 </p>
@@ -50,7 +50,7 @@
 ##### Layout 가로화면, Android Permission, View Animation, Activity Lifecycle, Content Provider (Storage Access Framework)
 <p float="left">
 <img src = "https://user-images.githubusercontent.com/52556870/114345255-59e02f80-9b9c-11eb-8efb-6cceabcd3e09.jpeg" width="200">
-<img src = "https://user-images.githubusercontent.com/52556870/114345262-5e0c4d00-9b9c-11eb-85f3-dd9a989470c8.jpeg" width="200">
+<img src = "https://user-images.githubusercontent.com/52556870/114345262-5e0c4d00-9b9c-11eb-85f3-dd9a989470c8.jpeg" height="200">
 </p>
 
 #### - Pomodoro Timer 
@@ -134,9 +134,9 @@
 ##### 4) Fragment 를 사용하여 하단 탭 화면 구조 구현, FloatingActionButton 사용
 ##### RecyclerView, View Binding, Fragment, BottomNavigationView, Firebase Storage/Realtime Database/Authentication
 <p float="left">
-<img src = "https://user-images.githubusercontent.com/52556870/132361240-2ad76ae5-2267-4db2-9fd6-c1024a03c823.png" width="200">
-<img src = "https://user-images.githubusercontent.com/52556870/132361231-35b4df9e-a5bb-4137-9e5c-f83ca20fdd8b.png" width="200">
-<img src = "https://user-images.githubusercontent.com/52556870/132361239-0eaa1c68-f1c6-4bd7-9683-19641094b237.png" width="200">
+<img src = "https://user-images.githubusercontent.com/52556870/132361240-2ad76ae5-2267-4db2-9fd6-c1024a03c823.png" width="200" height = "500" >
+<img src = "https://user-images.githubusercontent.com/52556870/132361231-35b4df9e-a5bb-4137-9e5c-f83ca20fdd8b.png" width="200" height = "500">
+<img src = "https://user-images.githubusercontent.com/52556870/132361239-0eaa1c68-f1c6-4bd7-9683-19641094b237.png" width="200" height = "500">
 </p>
 
 #### - 에어비엔비
