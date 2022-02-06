@@ -124,7 +124,7 @@
 ##### Firebase Authenetication( Email/Facebook 로그인 )/ Realtime Database, yuyakaido/CardStackView
 <p float="left">
 <img src = "https://user-images.githubusercontent.com/52556870/132363794-0e63f8aa-aef4-44b5-aa4e-be94a7df2f7b.png" width="200">
-<img src = "https://user-images.githubusercontent.com/52556870/132363792-e04fdb4b-5583-4113-8fa5-a36c161f0e89.png" width="200">
+<img src = "https://user-images.githubusercontent.com/52556870/152687762-27715caf-035d-484b-8794-23a63c172661.jpg" width="200">
 </p>
 
 #### - 중고거래 앱
@@ -134,9 +134,9 @@
 ##### 4) Fragment 를 사용하여 하단 탭 화면 구조 구현, FloatingActionButton 사용
 ##### RecyclerView, View Binding, Fragment, BottomNavigationView, Firebase Storage/Realtime Database/Authentication
 <p float="left">
-<img src = "https://user-images.githubusercontent.com/52556870/132361240-2ad76ae5-2267-4db2-9fd6-c1024a03c823.png" width="200" height = "500" >
-<img src = "https://user-images.githubusercontent.com/52556870/132361231-35b4df9e-a5bb-4137-9e5c-f83ca20fdd8b.png" width="200" height = "500">
-<img src = "https://user-images.githubusercontent.com/52556870/132361239-0eaa1c68-f1c6-4bd7-9683-19641094b237.png" width="200" height = "500">
+<img src = "https://user-images.githubusercontent.com/52556870/132361240-2ad76ae5-2267-4db2-9fd6-c1024a03c823.png" width="200" height = "450" >
+<img src = "https://user-images.githubusercontent.com/52556870/132361231-35b4df9e-a5bb-4137-9e5c-f83ca20fdd8b.png" width="200" height = "450">
+<img src = "https://user-images.githubusercontent.com/52556870/132361239-0eaa1c68-f1c6-4bd7-9683-19641094b237.png" width="200" height = "450">
 </p>
 
 #### - 에어비엔비
